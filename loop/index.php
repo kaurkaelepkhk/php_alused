@@ -1,5 +1,4 @@
 <?php
-header('refresh: 0.1')
 /**
  * Created by PhpStorm.
  * User: kaur.kaelep
@@ -29,26 +28,49 @@ for ($arv = 1; $arv <= 10; $arv++) {
 
 <style>
     table, tr, td {
-        width: 1900px;
-        height: 200px;
+        width: 300px;
+        height: 30px;
         border: solid 1px black;
         border-collapse: collapse;
+    }
+    td {
+        text-align: center;
     }
 </style>
 
 <?php
 
-echo '<h5>Ülesanne 2</h5>';
+/*echo '<h5>Ülesanne 2</h5>';
 echo '<table>';
-    for($reaNumber = 1; $reaNumber <= 5; $reaNumber++) {
+    for($reaNumber = 1; $reaNumber <= 11; $reaNumber++) {
         echo '<tr>';
-        for($veeruNumber = 1; $veeruNumber <= 5; $veeruNumber++) {
+        for($veeruNumber = 1; $veeruNumber <= 11; $veeruNumber++) {
             $varv = '#';
             for($kord = 1; $kord <= 6; $kord++) {
-                $varv = $varv.dechex(rand(0, 15));
+                $varv = $varv.rand(0, 10);
             }
             echo '<td style="background: '.$varv.'">&nbsp;</td>';
         }
         echo '</tr>';
+    }
+echo '</table>';*/
+
+echo '<h5> Ülesanne 3</h5>';
+echo '<table>';
+    echo '<tr>';
+    for ($rnr = 0; $rnr <= 10; $rnr++) {
+        $txt = ($rnr == 0) ? '&nbsp;' : $rnr;
+        echo '<th>'.$rnr.'</th>';
+    }
+    echo '</tr>';
+    for ($rnr = 1; $rnr <= 10; $rnr++) {
+        echo'<tr>';
+            echo '<th>'.$rnr.'</th>';
+            for ($vnr = 1; $vnr <= 10; $vnr++) {
+                echo '<td>';
+                echo ($rnr * $vnr);
+                echo '</td>';
+            }
+        echo'</tr>';
     }
 echo '</table>';
