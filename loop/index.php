@@ -7,8 +7,30 @@
  */
 
 /*
+ *  while(tingimus) {
+ *      tegevused, mis toimuvad nii kaua kui kehtib
+ * }
+ *
+ */
+
+$arv = 1234;
+while($arv != 0) {
+    $number = $arv % 10;
+    echo 'Number = '.$number.'</br>';
+    $arv = $arv / 10;
+    echo 'Arv ümardamata = '.$arv.'<br>';
+    settype($arv, 'int');
+    echo 'Arv ümardatult = '.$arv.'</br>';
+//    $summa = $summa + $number;
+    $summa += $number;
+    echo '<hr>';
+}
+echo 'Arvu numbrite summa = ' .$summa.'</br>';
+
+// for
+/*
  * for($jmn = alg; $jmn <= lopp; $jmn++) {
- *      tegevused, mis toimuvad nii kaua kui jmn väärtus ei ole enam tõenem
+ *      tegevused, mis toimuvad nii kaua kui jmn väärtus ei ole enam tõene
  * }
  */
 
