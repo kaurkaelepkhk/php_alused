@@ -46,3 +46,32 @@ array_shift($kasutajad);
 print_r
 var_dump
 */
+
+//mitu massiivi ühes variables
+/*$kasutajad = array(
+    array (
+    'Bob',
+    'Sob',
+    'Hog',
+    'female'
+), array(
+    'Salmon',
+    'Tortoise',
+    'Clown',
+    'male',
+    )
+);
+
+echo '<hr>';
+foreach ($kasutajad as $kasutaja) {
+    for ($i = 0; $i < count($kasutaja); $i++) {
+        if($kasutaja[3] == 'female') {
+            echo '<div style="color: red;">';
+        } else {
+            echo '<div style="color: blue;">';
+        }
+        echo $kasutaja[$i].'</div>';
+    }
+    echo '<hr>';
+}*/
+
