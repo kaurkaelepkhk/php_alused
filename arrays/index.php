@@ -62,16 +62,22 @@ var_dump
     )
 );
 
-echo '<hr>';
+echo '<table style="border: solid 1px">';
+echo '<tr>
+    <th>kasutaja</th>
+    <th>eesnimi</th>
+    <th>perenimi</th>
+    <th>sugu</th>
+    </tr>';
 foreach ($kasutajad as $kasutaja) {
+    echo '<tr>';
     for ($i = 0; $i < count($kasutaja); $i++) {
         if($kasutaja[3] == 'female') {
-            echo '<div style="color: red;">';
+            echo '<td style="background: red;">';
         } else {
-            echo '<div style="color: blue;">';
+            echo '<td style="background: red;">';
         }
-        echo $kasutaja[$i].'</div>';
+        echo $kasutaja[$i].'</td>';
     }
-    echo '<hr>';
 }*/
 
