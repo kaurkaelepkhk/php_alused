@@ -25,3 +25,11 @@ echo '<pre>';
 print_r($res);
 
 echo 'Tere, '.$res[0]['first_name'].' '.$res[0]['last_name'].'<br>';
+
+$sql = 'SELECT NOW()';
+$aeg = getData($sql, $iktConn);
+
+echo '<pre>';
+print_r($aeg);
+
+echo $aeg[0]['NOW()'].'<br>';
